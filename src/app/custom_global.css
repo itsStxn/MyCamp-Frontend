@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(../assets/font_families/satoshi.css);
+@import url(../assets/font_families/switzer.css);
+@import url(../assets/font_families/oswald.css);
+
+:root {
+  /* Screen sizes for different devices */
+  --min-phone: 320px;
+  --max-phone: 500px;
+  --min-tablet: 501px;
+  --max-tablet: 991px;
+  --min-desktop: 992px;
+
+  /* Base font sizes for body text */
+  --body-phone: 14px;
+  --body-tablet: 16px;
+  --body-desktop: 18px;
+
+  /* Font sizes for large titles (e.g., hero section) */
+  --hero-title-phone: 32px;
+  --hero-title-tablet: 48px;
+  --hero-title-desktop: 64px;
+
+  /* Font sizes for h1 */
+  --h1-phone: 24px;
+  --h1-tablet: 32px;
+  --h1-desktop: 40px;
+
+  /* Font sizes for h2 */
+  --h2-phone: 20px;
+  --h2-tablet: 28px;
+  --h2-desktop: 32px;
+
+  /* Font sizes for h3 */
+  --h3-phone: 18px;
+  --h3-tablet: 24px;
+  --h3-desktop: 28px;
+
+  /* Font sizes for h4 */
+  --h4-phone: 16px;
+  --h4-tablet: 20px;
+  --h4-desktop: 24px;
+
+  /* Font sizes for h5 */
+  --h5-phone: 14px;
+  --h5-tablet: 18px;
+  --h5-desktop: 20px;
+
+  /* Font sizes for h6 */
+  --h6-phone: 12px;
+  --h6-tablet: 16px;
+  --h6-desktop: 18px;
+
+  /* Font sizes for small text (e.g., footer) */
+  --small-text-phone: 10px;
+  --small-text-tablet: 12px;
+  --small-text-desktop: 14px;
+
+  /* Color schemes */
+  --color-bg-dark: #3E3E3E;
+  --color-main-1: #388CAF;
+  --color-main-2: #71D4B1;
+  --color-main-3: linear-gradient(65deg, #388caf 0%, #71d4b1 100%);
+  --color-main-4: #d3d3d3;
+
+  /* Padding and margin variables */
+  --padding-1: 16px;
+  --padding-2: 32px;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  background-image: url(/patterns/pattern\ \(7\).svg);
+  background-attachment: fixed;
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+}
+
+.p-toast-message-content {
+  box-shadow: rgba(0, 0, 0, 0.350) 0 0.2rem 0.2rem;
+  fill: white;
+  color: white;
+  backdrop-filter: blur(1rem);
+  border-radius: .5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.p-toast-message-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.strong {
+  background: #388CAF;
+  background: linear-gradient(to right, var(--color-main-1) 0%, var(--color-main-2)100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-shadow: var(--color-main-1) 0px 0px 65px;
+}
+
+h1 {
+  text-shadow: black 0.2rem 0.2rem 0.2rem;
+  display: block;
+  color: white;
+  font-size: var(--hero-title);
+  font-weight: lighter;
+}
+
+@media (max-width: 500px) {
+  :root {
+    --body: var(--body-phone);
+    --hero-title: var(--hero-title-phone);
+    --h1: var(--h1-phone);
+    --h2: var(--h2-phone);
+    --h3: var(--h3-phone);
+    --h4: var(--h4-phone);
+    --h5: var(--h5-phone);
+    --h6: var(--h6-phone);
+    --small-text: var(--small-text-phone);
+    --padding: var(--padding-1);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
+  :root {
+    --body: var(--body-tablet);
+    --hero-title: var(--hero-title-tablet);
+    --h1: var(--h1-tablet);
+    --h2: var(--h2-tablet);
+    --h3: var(--h3-tablet);
+    --h4: var(--h4-tablet);
+    --h5: var(--h5-tablet);
+    --h6: var(--h6-tablet);
+    --small-text: var(--small-text-tablet);
+    --padding: var(--padding-1);
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --body: var(--body-desktop);
+    --hero-title: var(--hero-title-desktop);
+    --h1: var(--h1-desktop);
+    --h2: var(--h2-desktop);
+    --h3: var(--h3-desktop);
+    --h4: var(--h4-desktop);
+    --h5: var(--h5-desktop);
+    --h6: var(--h6-desktop);
+    --small-text: var(--small-text-desktop);
+    --padding: var(--padding-2);
+  }
+}

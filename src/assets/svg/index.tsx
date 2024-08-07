@@ -1,0 +1,11 @@
+export { ReactComponent as Deer } from './Deer.svg';
+export { ReactComponent as Hiking } from './Hiking.svg';
+export { ReactComponent as Fish } from './Fish.svg';
+export { ReactComponent as Sun } from './Sun.svg';
+export { ReactComponent as Instagram } from './Instagram.svg';
+export { ReactComponent as Facebook } from './Facebook.svg';
+export { ReactComponent as TikTok } from './TikTok.svg';
+export { ReactComponent as Map } from './Map.svg';
+export { ReactComponent as Book } from './Book.svg';
+export { ReactComponent as Edit } from './Edit.svg';
+export { ReactComponent as Heart } from './Heart.svg';

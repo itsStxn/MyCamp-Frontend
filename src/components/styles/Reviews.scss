@@ -1,0 +1,16 @@
+@use "./vars/vars.scss" as *;
+
+.Reviews{
+	svg, path {
+		display: none;
+	}
+	@media screen and (max-width: $max-tablet) {
+		flex-direction: column;
+		.cards {
+			width: 100%;
+		}
+		.carousel {
+			width: 70rem;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+@use "./vars/vars.scss" as *;
+
+.Nav {
+	@media screen and (max-width: $max-tablet) {
+		.Hamburger {
+			display: block;
+		}
+		ul, .Button {
+			display: none;
+		}
+	}
+	@media screen and (min-width: $min-desktop) {
+		.Hamburger {
+			display: none;
+		}
+		ul, .Button {
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@use "@/components/styles/vars/vars.scss" as *;
+
+.SignIn {
+	.input {
+		box-shadow: rgba(0, 0, 0, 0.250) 0.2rem 0.2rem 0.5rem;
+		background-color: rgba(255, 255, 255, .9);
+		border-width: 0;
+	}
+	h1 {
+		text-shadow: rgba(0, 0, 0, 0.486) 0 0.2rem 0.2rem;
+	}
+	.home {
+		box-shadow: rgba(0, 0, 0, 0.450) 0.2rem 0.2rem 0.5rem;
+	}
+	@media screen and (max-width: $max-tablet) {
+		flex-direction: column;
+		height: fit-content;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+		h1 {
+			display: none;
+		}
+		.names {
+			flex-direction: column;
+		}
+		.form {
+			width: 25rem;
+		}
+	}
+}

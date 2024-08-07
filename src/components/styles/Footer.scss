@@ -1,0 +1,45 @@
+.Footer {
+	background-image: url(/footer.png);
+	background-position: top;
+	position: relative;
+	
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: linear-gradient(to top, rgb(228, 162, 76) 0%, transparent 100%);
+	}
+
+	svg {
+		stroke-width: 1px;
+		stroke: transparent;
+	}
+	
+	h1 {
+		text-align: center;
+		font-size: var(--h5);
+		font-weight: bold;
+		font-family: Switzer-Variable;
+		opacity: .4;
+	}
+	
+	p {
+		font-size: var(--small-text);
+	}
+	
+	p, pre {
+		font-family: Satoshi-Variable;
+	}
+
+	.section {
+		gap: .5rem;
+		display: flex;
+		flex-direction: column;
+		width: 25rem;
+		height: fit-content;
+	}
+}
